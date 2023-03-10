@@ -230,11 +230,11 @@ if options == 'Pass Map':
 	plt.text(70,-18,'Passes into\nbox',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 	plt.scatter(90,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(90,-10,str(round(xT,3)),c='#7b2f72',size=20,ha='center',va='center',**lfont)
+	plt.text(90,-10,str(round(xT,3)),c='#7b2f72',size=18,ha='center',va='center',**lfont)
 	plt.text(90,-18,'Expected\nThreat',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 	plt.scatter(110,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(110,-10,str(round(xT_per_pass*10,3)),c='#7b2f72',size=15,ha='center',va='center',**lfont)
+	plt.text(110,-10,str(round(xT_per_pass*10,3)),c='#7b2f72',size=18,ha='center',va='center',**lfont)
 	plt.text(110,-18,'xT per\n10 passes',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 
