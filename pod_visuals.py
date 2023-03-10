@@ -185,20 +185,6 @@ if options == 'Pass Map':
 	plt.gca().invert_yaxis()
 
 
-
-	# #create the heat map
-	# kde = sns.kdeplot(
-	#     df_passes['endX'],
-	#     df_passes['endY'],
-	#     shade = True,
-	#     shade_lowest  =False,
-	#     alpha=.4,
-	#     n_levels=10,
-	#     cmap = 'mako'
-	    
-	# )
-
-	    
 	pitch.arrows(10,40,110,40,ax=ax,width=30, headwidth=5, color ='#2A6D32',zorder=1,alpha=.1)
 
 	#use a loop to plot each pass
@@ -228,19 +214,19 @@ if options == 'Pass Map':
 
 	#hex stats
 	plt.scatter(10,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(10,-10,str(passes_attempted),c='#7b2f72',size=25,ha='center',va='center',**lfont)
+	plt.text(10,-10,str(passes_attempted),c='#7b2f72',size=20,ha='center',va='center',**lfont)
 	plt.text(10,-18,'Passes\nattempted',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 	plt.scatter(30,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(30,-10,str(round(pass_suc_rate,1)),c='#7b2f72',size=25,ha='center',va='center',**lfont)
+	plt.text(30,-10,str(round(pass_suc_rate,1)),c='#7b2f72',size=20,ha='center',va='center',**lfont)
 	plt.text(30,-18,'Pass\nsuccess, %',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 	plt.scatter(50,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(50,-10,str(suc_prog_passes),c='#7b2f72',size=25,ha='center',va='center',**lfont)
+	plt.text(50,-10,str(suc_prog_passes),c='#7b2f72',size=20,ha='center',va='center',**lfont)
 	plt.text(50,-18,'Progressive\npasses',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 	    
 	plt.scatter(70,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(70,-10,str(suc_passes_to_box),c='#7b2f72',size=25,ha='center',va='center',**lfont)
+	plt.text(70,-10,str(suc_passes_to_box),c='#7b2f72',size=20,ha='center',va='center',**lfont)
 	plt.text(70,-18,'Passes into\nbox',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 	plt.scatter(90,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
@@ -248,7 +234,7 @@ if options == 'Pass Map':
 	plt.text(90,-18,'Expected\nThreat',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 	plt.scatter(110,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(110,-10,str(round(xT_per_pass*10,3)),c='#7b2f72',size=20,ha='center',va='center',**lfont)
+	plt.text(110,-10,str(round(xT_per_pass*10,3)),c='#7b2f72',size=15,ha='center',va='center',**lfont)
 	plt.text(110,-18,'xT per\n10 passes',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 
@@ -408,28 +394,28 @@ if options == 'Passes Received':
 
 
 	plt.scatter(10,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32',zorder=3)
-	plt.text(10,-10,str(rec_passes),c='#7b2f72',size=25,ha='center',va='center',**lfont)
+	plt.text(10,-10,str(rec_passes),c='#7b2f72',size=20,ha='center',va='center',**lfont)
 	plt.text(10,-18,'Passes\nreceived',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 
 	plt.scatter(30,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32',zorder=3)
-	plt.text(30,-10,str(round(rec_pass_len,1)),c='#7b2f72',size=25,ha='center',va='center',**lfont)
+	plt.text(30,-10,str(round(rec_pass_len,1)),c='#7b2f72',size=20,ha='center',va='center',**lfont)
 	plt.text(30,-18,'Average\nlength\n(yards)',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 	plt.scatter(50,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32',zorder=3)
-	plt.text(50,-10,str(rec_prog_passes),c='#7b2f72',size=25,ha='center',va='center',**lfont)
+	plt.text(50,-10,str(rec_prog_passes),c='#7b2f72',size=20,ha='center',va='center',**lfont)
 	plt.text(50,-18,'Progressive\npasses\nreceived',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 	    
 	plt.scatter(70,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32',zorder=3)
-	plt.text(70,-10,str(rec_z14),c='#7b2f72',size=25,ha='center',va='center',**lfont)
+	plt.text(70,-10,str(rec_z14),c='#7b2f72',size=20,ha='center',va='center',**lfont)
 	plt.text(70,-18,'Zone 14\nreceptions',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 	plt.scatter(90,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32',zorder=3)
-	plt.text(90,-10,str(rec_box),c='#7b2f72',size=25,ha='center',va='center',**lfont)
+	plt.text(90,-10,str(rec_box),c='#7b2f72',size=20,ha='center',va='center',**lfont)
 	plt.text(90,-18,'Box\nreceptions',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 	plt.scatter(110,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32',zorder=3)
-	plt.text(110,-10,str(round(rec_xT,3)),c='#7b2f72',size=20,ha='center',va='center',**lfont)
+	plt.text(110,-10,str(round(rec_xT,3)),c='#7b2f72',size=15,ha='center',va='center',**lfont)
 	plt.text(110,-18,'Expected\nThreat\nreceived',c='#2A6D32',size=15,ha='center',va='top',**lfont)
 
 
@@ -1228,19 +1214,19 @@ if options =='Pass Comparison':
 	        
 	        
 	ax1.scatter((80/14)*1,-10,marker='h',s=5000,facecolors='none',edgecolors='#2A6D32',lw=1,zorder=5)
-	ax1.text((80/14)*1,-10,round(passes_attempted_1,1),c='#7b2f72',size=29,ha='center',va='center',**lfont,zorder=5)
+	ax1.text((80/14)*1,-10,round(passes_attempted_1,1),c='#7b2f72',size=24,ha='center',va='center',**lfont,zorder=5)
 	ax1.text((80/14)*1,-20,'Passes\nattempted',c='#2A6D32',size=15,ha='center',va='top',**lfont,zorder=5)
 
 	ax1.scatter((80/14)*5,-10,marker='h',s=5000,facecolors='none',edgecolors='#2A6D32',lw=1,zorder=5)
-	ax1.text((80/14)*5,-10,round(pass_suc_rate_1,1),c='#7b2f72',size=29,ha='center',va='center',**lfont,zorder=5)
+	ax1.text((80/14)*5,-10,round(pass_suc_rate_1,1),c='#7b2f72',size=24,ha='center',va='center',**lfont,zorder=5)
 	ax1.text((80/14)*5,-20,'Pass\nsuccess, %',c='#2A6D32',size=15,ha='center',va='top',**lfont,zorder=5)
 
 	ax1.scatter((80/14)*9,-10,marker='h',s=5000,facecolors='none',edgecolors='#2A6D32',lw=1,zorder=5)
-	ax1.text((80/14)*9,-10,round(suc_prog_passes_1,1),c='#7b2f72',size=29,ha='center',va='center',**lfont,zorder=5)
+	ax1.text((80/14)*9,-10,round(suc_prog_passes_1,1),c='#7b2f72',size=24,ha='center',va='center',**lfont,zorder=5)
 	ax1.text((80/14)*9,-20,'Progressive\npasses\ncompleted',c='#2A6D32',size=15,ha='center',va='top',**lfont,zorder=5)
 
 	ax1.scatter((80/14)*13,-10,marker='h',s=5000,facecolors='none',edgecolors='#2A6D32',lw=1,zorder=5)
-	ax1.text((80/14)*13,-10,round(xT_1,3),c='#7b2f72',size=25,ha='center',va='center',**lfont,zorder=5)
+	ax1.text((80/14)*13,-10,round(xT_1,3),c='#7b2f72',size=20,ha='center',va='center',**lfont,zorder=5)
 	ax1.text((80/14)*13,-20,'Expected\nThreat',c='#2A6D32',size=15,ha='center',va='top',**lfont,zorder=5)
 
 	        
@@ -1302,19 +1288,19 @@ if options =='Pass Comparison':
 	ax2.text(40,121,playername2,c='#7b2f72',size=25,**lfont,ha='center',va='bottom')
 
 	ax2.scatter((80/14)*1,-10,marker='h',s=5000,facecolors='none',edgecolors='#2A6D32',lw=1,zorder=5)
-	ax2.text((80/14)*1,-10,round(passes_attempted_2,1),c='#7b2f72',size=29,ha='center',va='center',**lfont,zorder=5)
+	ax2.text((80/14)*1,-10,round(passes_attempted_2,1),c='#7b2f72',size=24,ha='center',va='center',**lfont,zorder=5)
 	ax2.text((80/14)*1,-20,'Passes\nattempted',c='#2A6D32',size=15,ha='center',va='top',**lfont,zorder=5)
 
 	ax2.scatter((80/14)*5,-10,marker='h',s=5000,facecolors='none',edgecolors='#2A6D32',lw=1,zorder=5)
-	ax2.text((80/14)*5,-10,round(pass_suc_rate_2,1),c='#7b2f72',size=29,ha='center',va='center',**lfont,zorder=5)
+	ax2.text((80/14)*5,-10,round(pass_suc_rate_2,1),c='#7b2f72',size=24,ha='center',va='center',**lfont,zorder=5)
 	ax2.text((80/14)*5,-20,'Pass\nsuccess, %',c='#2A6D32',size=15,ha='center',va='top',**lfont,zorder=5)
 
 	ax2.scatter((80/14)*9,-10,marker='h',s=5000,facecolors='none',edgecolors='#2A6D32',lw=1,zorder=5)
-	ax2.text((80/14)*9,-10,round(suc_prog_passes_2,1),c='#7b2f72',size=29,ha='center',va='center',**lfont,zorder=5)
+	ax2.text((80/14)*9,-10,round(suc_prog_passes_2,1),c='#7b2f72',size=24,ha='center',va='center',**lfont,zorder=5)
 	ax2.text((80/14)*9,-20,'Progressive\npasses\ncompleted',c='#2A6D32',size=15,ha='center',va='top',**lfont,zorder=5)
 
 	ax2.scatter((80/14)*13,-10,marker='h',s=5000,facecolors='none',edgecolors='#2A6D32',lw=1,zorder=5)
-	ax2.text((80/14)*13,-10,round(xT_2,3),c='#7b2f72',size=25,ha='center',va='center',**lfont,zorder=5)
+	ax2.text((80/14)*13,-10,round(xT_2,3),c='#7b2f72',size=20,ha='center',va='center',**lfont,zorder=5)
 	ax2.text((80/14)*13,-20,'Expected\nThreat',c='#2A6D32',size=15,ha='center',va='top',**lfont,zorder=5)
 
 
@@ -1415,20 +1401,20 @@ if options =='Defensive':
 	plt.text(2,81,'v '+oppo+ ', '+comp+' '+str(season),c='#2A6D32',size=25,**hfont,ha='left',va='bottom')
 
 	plt.scatter(33,-8,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(33,-8,str(tackles),c='#7b2f72',size=30,ha='center',va='center',**lfont)
+	plt.text(33,-8,str(tackles),c='#7b2f72',size=23,ha='center',va='center',**lfont)
 	plt.text(33,-16,'Tackles',c='#2A6D32',size=12,ha='center',va='top',**lfont)
 
 
 	plt.scatter(51,-8,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(51,-8,str(interceptions),c='#c7b729',size=30,ha='center',va='center',**lfont)
+	plt.text(51,-8,str(interceptions),c='#c7b729',size=23,ha='center',va='center',**lfont)
 	plt.text(51,-16,'Interceptions',c='#2A6D32',size=12,ha='center',va='top',**lfont)
 
 	plt.scatter(69,-8,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(69,-8,str(sucAerials),c='#2939C7',size=30,ha='center',va='center',**lfont)
+	plt.text(69,-8,str(sucAerials),c='#2939C7',size=23,ha='center',va='center',**lfont)
 	plt.text(69,-16,'Aerials won',c='#2A6D32',size=12,ha='center',va='top',**lfont)
 	    
 	plt.scatter(87,-8,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(87,-8,str(aerial_pc),c='#2939C7',size=25,ha='center',va='center',**lfont)
+	plt.text(87,-8,str(aerial_pc),c='#2939C7',size=18,ha='center',va='center',**lfont)
 	plt.text(87,-16,'Aerials won,\n%',c='#2A6D32',size=12,ha='center',va='top',**lfont)
 
 	st.pyplot(fig)
