@@ -14,9 +14,6 @@ import seaborn as sns
 lfont = {'fontname':'Bahnschrift'}
 hfont = {'fontname':'Rockwell Nova'}
 
-from PIL import Image
-from mplsoccer import add_image
-AA = Image.open('AA_Logo.png')
 
 from matplotlib.patches import Rectangle
 
