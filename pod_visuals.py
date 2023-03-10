@@ -394,29 +394,29 @@ if options == 'Passes Received':
 
 
 	plt.scatter(10,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32',zorder=3)
-	plt.text(10,-10,str(rec_passes),c='#7b2f72',size=20,ha='center',va='center',**lfont)
-	plt.text(10,-18,'Passes\nreceived',c='#2A6D32',size=15,ha='center',va='top',**lfont)
+	plt.text(10,-10,str(rec_passes),c='#7b2f72',size=21,ha='center',va='center',**lfont)
+	plt.text(10,-18,'Passes\nreceived',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 
 	plt.scatter(30,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32',zorder=3)
-	plt.text(30,-10,str(round(rec_pass_len,1)),c='#7b2f72',size=20,ha='center',va='center',**lfont)
-	plt.text(30,-18,'Average\nlength\n(yards)',c='#2A6D32',size=15,ha='center',va='top',**lfont)
+	plt.text(30,-10,str(round(rec_pass_len,1)),c='#7b2f72',size=21,ha='center',va='center',**lfont)
+	plt.text(30,-18,'Average\nlength\n(yards)',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 	plt.scatter(50,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32',zorder=3)
-	plt.text(50,-10,str(rec_prog_passes),c='#7b2f72',size=20,ha='center',va='center',**lfont)
-	plt.text(50,-18,'Progressive\npasses\nreceived',c='#2A6D32',size=15,ha='center',va='top',**lfont)
+	plt.text(50,-10,str(rec_prog_passes),c='#7b2f72',size=21,ha='center',va='center',**lfont)
+	plt.text(50,-18,'Progressive\npasses\nreceived',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 	    
 	plt.scatter(70,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32',zorder=3)
-	plt.text(70,-10,str(rec_z14),c='#7b2f72',size=20,ha='center',va='center',**lfont)
-	plt.text(70,-18,'Zone 14\nreceptions',c='#2A6D32',size=15,ha='center',va='top',**lfont)
+	plt.text(70,-10,str(rec_z14),c='#7b2f72',size=21,ha='center',va='center',**lfont)
+	plt.text(70,-18,'Zone 14\nreceptions',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 	plt.scatter(90,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32',zorder=3)
-	plt.text(90,-10,str(rec_box),c='#7b2f72',size=20,ha='center',va='center',**lfont)
-	plt.text(90,-18,'Box\nreceptions',c='#2A6D32',size=15,ha='center',va='top',**lfont)
+	plt.text(90,-10,str(rec_box),c='#7b2f72',size=21,ha='center',va='center',**lfont)
+	plt.text(90,-18,'Box\nreceptions',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 	plt.scatter(110,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32',zorder=3)
-	plt.text(110,-10,str(round(rec_xT,3)),c='#7b2f72',size=15,ha='center',va='center',**lfont)
-	plt.text(110,-18,'Expected\nThreat\nreceived',c='#2A6D32',size=15,ha='center',va='top',**lfont)
+	plt.text(110,-10,str(round(rec_xT,3)),c='#7b2f72',size=18,ha='center',va='center',**lfont)
+	plt.text(110,-18,'Expected\nThreat\nreceived',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 
 
@@ -1401,20 +1401,20 @@ if options =='Defensive':
 	plt.text(2,81,'v '+oppo+ ', '+comp+' '+str(season),c='#2A6D32',size=25,**hfont,ha='left',va='bottom')
 
 	plt.scatter(33,-8,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(33,-8,str(tackles),c='#7b2f72',size=23,ha='center',va='center',**lfont)
-	plt.text(33,-16,'Tackles',c='#2A6D32',size=12,ha='center',va='top',**lfont)
+	plt.text(33,-8,str(tackles),c='#7b2f72',size=21,ha='center',va='center',**lfont)
+	plt.text(33,-16,'Tackles',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 
 	plt.scatter(51,-8,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(51,-8,str(interceptions),c='#c7b729',size=23,ha='center',va='center',**lfont)
-	plt.text(51,-16,'Interceptions',c='#2A6D32',size=12,ha='center',va='top',**lfont)
+	plt.text(51,-8,str(interceptions),c='#c7b729',size=21,ha='center',va='center',**lfont)
+	plt.text(51,-16,'Interceptions',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 	plt.scatter(69,-8,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(69,-8,str(sucAerials),c='#2939C7',size=23,ha='center',va='center',**lfont)
-	plt.text(69,-16,'Aerials won',c='#2A6D32',size=12,ha='center',va='top',**lfont)
+	plt.text(69,-8,str(sucAerials),c='#2939C7',size=21,ha='center',va='center',**lfont)
+	plt.text(69,-16,'Aerials won',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 	    
 	plt.scatter(87,-8,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
 	plt.text(87,-8,str(aerial_pc),c='#2939C7',size=18,ha='center',va='center',**lfont)
-	plt.text(87,-16,'Aerials won,\n%',c='#2A6D32',size=12,ha='center',va='top',**lfont)
+	plt.text(87,-16,'Aerials won,\n%',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 	st.pyplot(fig)
