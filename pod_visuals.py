@@ -214,28 +214,28 @@ if options == 'Pass Map':
 
 	#hex stats
 	plt.scatter(10,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(10,-10,str(passes_attempted),c='#7b2f72',size=20,ha='center',va='center',**lfont)
-	plt.text(10,-18,'Passes\nattempted',c='#2A6D32',size=15,ha='center',va='top',**lfont)
+	plt.text(10,-10,str(passes_attempted),c='#7b2f72',size=21,ha='center',va='center',**lfont)
+	plt.text(10,-18,'Passes\nattempted',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 	plt.scatter(30,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(30,-10,str(round(pass_suc_rate,1)),c='#7b2f72',size=20,ha='center',va='center',**lfont)
-	plt.text(30,-18,'Pass\nsuccess, %',c='#2A6D32',size=15,ha='center',va='top',**lfont)
+	plt.text(30,-10,str(round(pass_suc_rate,1)),c='#7b2f72',size=21,ha='center',va='center',**lfont)
+	plt.text(30,-18,'Pass\nsuccess, %',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 	plt.scatter(50,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(50,-10,str(suc_prog_passes),c='#7b2f72',size=20,ha='center',va='center',**lfont)
-	plt.text(50,-18,'Progressive\npasses',c='#2A6D32',size=15,ha='center',va='top',**lfont)
+	plt.text(50,-10,str(suc_prog_passes),c='#7b2f72',size=21,ha='center',va='center',**lfont)
+	plt.text(50,-18,'Progressive\npasses',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 	    
 	plt.scatter(70,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
-	plt.text(70,-10,str(suc_passes_to_box),c='#7b2f72',size=20,ha='center',va='center',**lfont)
-	plt.text(70,-18,'Passes into\nbox',c='#2A6D32',size=15,ha='center',va='top',**lfont)
+	plt.text(70,-10,str(suc_passes_to_box),c='#7b2f72',size=21,ha='center',va='center',**lfont)
+	plt.text(70,-18,'Passes into\nbox',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 	plt.scatter(90,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
 	plt.text(90,-10,str(round(xT,3)),c='#7b2f72',size=18,ha='center',va='center',**lfont)
-	plt.text(90,-18,'Expected\nThreat',c='#2A6D32',size=15,ha='center',va='top',**lfont)
+	plt.text(90,-18,'Expected\nThreat',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 	plt.scatter(110,-10,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
 	plt.text(110,-10,str(round(xT_per_pass*10,3)),c='#7b2f72',size=18,ha='center',va='center',**lfont)
-	plt.text(110,-18,'xT per\n10 passes',c='#2A6D32',size=15,ha='center',va='top',**lfont)
+	plt.text(110,-18,'xT per\n10 passes',c='#2A6D32',size=14,ha='center',va='top',**lfont)
 
 
 
