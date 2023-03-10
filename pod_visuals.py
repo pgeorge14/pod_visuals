@@ -459,6 +459,7 @@ if options == 'Passes Received':
 
 if options =='Pass Comparison':
 	playername1 = st.selectbox('Select the first player:',options = df['playerName'].unique())
+	st.markdown('**Wait for first player visual to load before selecting second player\notherwise the app will crash.**')
 	playername2 = st.selectbox('Select the second player:',options = df['playerName'].unique())
 
 	df_vertical = df_reset
