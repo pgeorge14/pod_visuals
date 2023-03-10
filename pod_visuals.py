@@ -1402,19 +1402,19 @@ if options =='Defensive':
 
 	plt.scatter(33,-8,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
 	plt.text(33,-8,str(tackles),c='#7b2f72',size=21,ha='center',va='center',**lfont)
-	plt.text(33,-16,'Tackles',c='#2A6D32',size=14,ha='center',va='top',**lfont)
+	plt.text(33,-16,'Tackles',c='#2A6D32',size=12,ha='center',va='top',**lfont)
 
 
 	plt.scatter(51,-8,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
 	plt.text(51,-8,str(interceptions),c='#c7b729',size=21,ha='center',va='center',**lfont)
-	plt.text(51,-16,'Interceptions',c='#2A6D32',size=14,ha='center',va='top',**lfont)
+	plt.text(51,-16,'Interceptions',c='#2A6D32',size=12,ha='center',va='top',**lfont)
 
 	plt.scatter(69,-8,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
 	plt.text(69,-8,str(sucAerials),c='#2939C7',size=21,ha='center',va='center',**lfont)
-	plt.text(69,-16,'Aerials won',c='#2A6D32',size=14,ha='center',va='top',**lfont)
+	plt.text(69,-16,'Aerials won',c='#2A6D32',size=12,ha='center',va='top',**lfont)
 	    
 	plt.scatter(87,-8,marker='h',s=4000,facecolors='none',edgecolors='#2A6D32')
 	plt.text(87,-8,str(aerial_pc),c='#2939C7',size=18,ha='center',va='center',**lfont)
-	plt.text(87,-16,'Aerials won,\n%',c='#2A6D32',size=14,ha='center',va='top',**lfont)
+	plt.text(87,-16,'Aerials won,\n%',c='#2A6D32',size=12,ha='center',va='top',**lfont)
 
 	st.pyplot(fig)
