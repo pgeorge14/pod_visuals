@@ -244,7 +244,7 @@ if options == 'Pass Map':
 
 	pass_height = 74.2
 	for x in range(0,max_friend):
-	    plt.text(123,pass_height,str(friend['recipientName'][x]),c='#4b3ea2',size=12,**lfont,ha='left',va='top')
+	    plt.text(123,pass_height,str(friend['recipientName'][x]),c='#4b3ea2',size=10,**lfont,ha='left',va='top')
 	    plt.text(153,pass_height,friend['passCount'][x],c='#7b2f72',size=12,**lfont,ha='right',va='top')
 	    plt.plot([121,155],[pass_height+0.8,pass_height+0.8], c='w',lw=1)
 
@@ -426,7 +426,7 @@ if options == 'Passes Received':
 
 	rec_height = 74.2
 	for x in range(0,max_giver):
-	    plt.text(123,rec_height,str(giver['playerName'][x]),c='#4b3ea2',size=12,**lfont,ha='left',va='top')
+	    plt.text(123,rec_height,str(giver['playerName'][x]),c='#4b3ea2',size=10,**lfont,ha='left',va='top')
 	    plt.text(153,rec_height,giver['passCount'][x],c='#7b2f72',size=12,**lfont,ha='right',va='top')
 	    plt.plot([121,155],[rec_height+0.8,rec_height+0.8], c='w',lw=1)
 
