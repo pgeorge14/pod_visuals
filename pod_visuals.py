@@ -24,9 +24,9 @@ import streamlit as st
 team = 175
 
 comp = 'Championship'
-season = '2022/23'
+season = '2023/24'
 
-games = pd.read_csv('WBA23Games.csv')
+games = pd.read_csv('WBA24Games.csv')
 
 
 
